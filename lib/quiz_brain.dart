@@ -45,6 +45,10 @@ class QuizBrain {
     return _questionBank[_questionNumber].questionAnswer;
   }
 
+  int getQuizLength() {
+    return _questionBank.length;
+  }
+
   // Checks to see if we have reached the last question. It should return (have an output) true if we've reached the last question and it should return false if we're not there yet.
   bool isFinished() {
     if (_questionNumber == _questionBank.length - 1) return true;
