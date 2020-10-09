@@ -49,7 +49,7 @@ class _QuizPageState extends State<QuizPage> {
         // Empty out the scoreKeeper.
         scoreKeeper = [];
       }
-      // If we've not reached the end, ELSE do the answer checking steps below 👇
+      // If we've not reached the end, do the answer checking steps below 👇
       else {
         if (userPickedAnswer == correctAnswer) {
           scoreKeeper.add(Icon(
@@ -135,9 +135,3 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 }
-
-/*
-question1: 'You can lead a cow down stairs but not up stairs.', false,
-question2: 'Approximately one quarter of human bones are in the feet.', true,
-question3: 'A slug\'s blood is green.', true,
-*/
